@@ -1,11 +1,37 @@
-import express from 'express';
+import bodyParser from 'body-parser';
+import express, { Response, Request } from 'express';
 
 // @ts-ignore
-const app: any = express();
-const port: any = 8000;
+const app: Express = express();
+const port: number = 8000;
 
-app.get('/', (req: any, res: any) => {
-  res.send('Hello World with Nodemon+TS!')
+/**
+ * NOTE:
+ * body-parser is an NPM package that parses incoming request bodies in a middleware before 
+ * your handlers, available under the req.body property. 
+ * app.use(bp.json()) looks at requests where the Content-Type: application/json header is present and
+ * transforms the text-based JSON input into JS-accessible variables under req.body. 
+ * app.use(bp.urlencoded({extended: true}) does the same for URL-encoded requests. 
+ * the extended: true precises that the req.body object will contain values of any type instead of just strings.
+ */
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+
+app.get('/', (req: Request, res: Response) => {
+  return res.send('Hello World with Nodemon+TS!')
+  // Alternate-1:
+  // return res.status(200).send('Hello World with Nodemon+TS!')
+});
+
+// Sample req: POST http://localhost:8000/rParam/thisIsRouteParamaValue?sampleQueryParam=sampleQueryParamValue
+app.post('/rParam/:rParam', (req: Request, res: Response) => {
+  // Alternate-2:
+  res.send({
+    message: 'This is JSON for POST req',
+    requestBody: req.body,
+    requestParam: req.params,
+    requestQuery: req.query
+  })
 });
 
 app.listen(port, () => {
