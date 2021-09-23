@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://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@github.com/sujit510/node-basic-js.git"
+    "url": "git+https://<personal_token>@github.com/sujit510/node-basic-js.git"
   },
   "author": "",
   "license": "ISC",
