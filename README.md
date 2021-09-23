@@ -2,8 +2,8 @@
 
 This is basic NodeJS project.
 
-# Steps:
+### Steps:
 1. git checkout https://<personal_token>@github.com/sujit510/node-basic-js.git
-2. cd node-basic-js
-3. npm i
-4. Run - nodemon index.js
+1. cd node-basic-js
+1. npm i
+1. Run - nodemon index.js
