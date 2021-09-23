@@ -18,14 +18,14 @@
   },
   "homepage": "https://github.com/sujit510/node-basic-js#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "1.19.0",
     "express": "4.17.1"
   },
   "devDependencies": {
-    "@types/express": "^4.17.13",
-    "@types/node": "^16.9.6",
+    "@types/express": "4.17.13",
+    "@types/node": "16.9.6",
     "nodemon": "2.0.12",
-    "ts-node": "^10.2.1",
+    "ts-node": "10.2.1",
     "typescript": "4.4.3"
   }
 }
