@@ -1,0 +1,22 @@
+{
+  "name": "basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/sujit510/node-basic-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sujit510/node-basic-js/issues"
+  },
+  "homepage": "https://github.com/sujit510/node-basic-js#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
