@@ -1,9 +1,10 @@
-import bodyParser from 'body-parser';
-import express, { Response, Request } from 'express';
+import * as bodyParser from 'body-parser';
+import * as express from 'express';
+import { Response, Request } from 'express';
 
 // @ts-ignore
 const app: Express = express();
-const port: number = 8000;
+const port = process.env.APP_PORT || 8000;
 
 /**
  * NOTE:
