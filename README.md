@@ -16,6 +16,7 @@ This is basic NodeJS project.
 (If you get error as "denied: requested access to the resource is denied", try "docker login", or "docker logout" and then "docker login")
 
 ###### Note: This can be automated using one of following, so when you push code to github, it will build and push new image to docker hub:
+### Autiomate the build creation
 1. Using Pro subscription of Docker hub.
 1. Using Github Actions (Followed here in this repo-branch):
     1. Go to Dockerhub > Account Settings > Security > New Access Token > Add Description and access rights (Read/Write/Delete) > Create and Copy the access token.
@@ -50,4 +51,9 @@ This is basic NodeJS project.
             1. Basically, tt adds a new file node.js.yml at .github/workflows path (Already checked in this repo-branch)
 
         1. Now go to Actions and see if build process has started. This will get triggered everytime any change happens to repo as indicated in "on" section
+
+    ##### Note: More can be referred here: https://docs.docker.com/ci-cd/github-actions/
+    #### Optimizing the Git Actions Workflow:
+    1. 
+
 
