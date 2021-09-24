@@ -22,7 +22,8 @@ RUN rm -rf /app/src
 
 RUN mv /app/node_modules /app/dist
 
-RUN rm /app/.npmrc
+# 24/9/2021: This was throwing error, hence commented
+# RUN rm /app/.npmrc
 
 ENV NODE_ENV production
 
