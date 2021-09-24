@@ -16,3 +16,4 @@ This is basic NodeJS project.
 (If you get error as "denied: requested access to the resource is denied", try "docker login", or "docker logout" and then "docker login")
 
 ###### Note: This can be automated using Pro subscription of Docker hub. So when you push code to github, it will build and push new image to docker hub
+1. Run - node index.js
